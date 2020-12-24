@@ -6,7 +6,7 @@
 - [ ] fix any remaining failing CI (test, markdown and code listing)
 - [ ] ensure the doc is up to date
 - [ ] make sure the doc builds correctly and fix any error
-- [ ] updater changelog
+- [ ] update changelog
 - [ ] merge to master
 - [ ] create a tagged release
 
