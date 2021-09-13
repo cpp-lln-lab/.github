@@ -11,6 +11,7 @@
 - [ ] merge to master
 - [ ] create a tagged release
 - [ ] update and downstream repo (for example any template repo that use this repo as a submodule)
+- [ ] build and push docker images if necessary
 
 
 
