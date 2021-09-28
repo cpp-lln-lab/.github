@@ -8,28 +8,29 @@ description: Suggest an idea for this project
 title: "[ENH]: "
 
 body:
-
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the feature you want.
+      description:
+        Please search to see if an issue already exists for the feature you
+        want.
       options:
-      - label: I have searched the existing issues
-        required: true
+        - label: I have searched the existing issues
+          required: true
 
   - type: textarea
     attributes:
       label: New feature
       description: You think / need this code to do...
-      placeholder: "**insert here your cool idea**."
       render: markdown
+      placeholder: Insert here your cool idea.
     validations:
       required: false
 
   - type: textarea
     attributes:
       label: Unclear documentation
-      description: | 
+      description: |
         Something is missing / unclear about **X**.
 
         You are confused about how to do **Y**.
@@ -37,9 +38,7 @@ body:
         It is not clear how / why the code does **Z**.
 
         That means that we can improve the code or the documentation.
-      placeholder: "**tell us more**."
       render: markdown
+      placeholder: Tell us more.
     validations:
       required: false
-
- 
