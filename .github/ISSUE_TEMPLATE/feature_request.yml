@@ -22,6 +22,7 @@ body:
       label: New feature
       description: You think / need this code to do...
       placeholder: "**insert here your cool idea**."
+      render: markdown
     validations:
       required: false
 
@@ -37,6 +38,7 @@ body:
 
         That means that we can improve the code or the documentation.
       placeholder: "**tell us more**."
+      render: markdown
     validations:
       required: false
 
