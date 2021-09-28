@@ -10,15 +10,15 @@ title: "[BUG]: "
 labels: ["bug"]
 
 body:
-
-
   - type: checkboxes
     attributes:
       label: Is there an existing issue for this?
-      description: Please search to see if an issue already exists for the bug you encountered.
+      description:
+        Please search to see if an issue already exists for the bug you
+        encountered.
       options:
-      - label: I have searched the existing issues
-        required: true
+        - label: I have searched the existing issues
+          required: true
 
   - type: textarea
     attributes:
@@ -53,11 +53,11 @@ body:
           - **OS**: Ubuntu 20.04
           - **Matlab**: 2017a
           - **SPM**: 12
-      value: |
-          - OS:
-          - Matlab:
-          - SPM:
       render: markdown
+      value: |
+        - OS:
+        - Matlab:
+        - SPM:
 
   - type: textarea
     attributes:
