@@ -1,16 +1,13 @@
-## Hi there 👋
+## 👋 Welcome to the Crossmodal Perception and Plasticity laboratory 👋
 
-This is a test
+What is the advantage of having multiple senses to sample the world? 
 
-**Here are some ideas to get you started:**
+How does the brain integrate or segregate different sensory signals? 
 
-🙋‍♀️ A short introduction - what is your organization all about?
+What are the consequences of sensory deprivation for the mind and brain? 
 
-🌈 Contribution guidelines - how can the community get involved?
+Do blind people think differently about colors? What replaces voices or speech in deaf people?
 
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
+In the CPP-lab, we are trying to address these questions and many more.
 
-🍿 Fun facts - what does your team eat for breakfast?
-
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
-
+**[Website](https://cpplab.be/)**
