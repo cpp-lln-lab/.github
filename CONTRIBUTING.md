@@ -632,7 +632,7 @@ Change the `3` to crop more characters at the end.
 - the smart way
 
 ```bash
-find folder_path -type f -name "*.m" \
+find folder_path -maxdepth 1 -type f -name "*.m" \
      -exec sh -c 'for f do basename -- "$f" ;done' sh {} +
 ```
 
