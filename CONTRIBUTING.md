@@ -14,17 +14,19 @@ the following sections:
 - [Table of Contents](#table-of-contents)
 - [Contributing through GitHub](#contributing-through-github)
 - [Understanding issues](#understanding-issues)
+  - [Issue labels](#issue-labels)
 - [Making a change with a pull request](#making-a-change-with-a-pull-request)
-    - [2. Fork [this repository](https://github.comcpp-lln-lab/CPP_BIDS) to your profile](#2-fork-this-repository-to-your-profile)
-    - [3. Make the changes you've discussed](#3-make-the-changes-youve-discussed)
-    - [4. Submit a pull request](#4-submit-a-pull-request)
+  - [Comment on an existing issue or open a new issue referencing your addition](#comment-on-an-existing-issue-or-open-a-new-issue-referencing-your-addition)
+  - [Fork this repository to your profile](#fork-this-repository-to-your-profile)
+  - [Make the changes you've discussed](#make-the-changes-youve-discussed)
+  - [Submit a pull request](#submit-a-pull-request)
 - [Example pull request](#example-pull-request)
 - [Commenting on a pull request](#commenting-on-a-pull-request)
   - [Navigating to open pull requests](#navigating-to-open-pull-requests)
   - [Pull request description](#pull-request-description)
   - [Generally commenting on a pull request](#generally-commenting-on-a-pull-request)
   - [Specific comments on a pull request](#specific-comments-on-a-pull-request)
-    - [Suggesting text](#suggesting-text)
+  - [Suggesting text](#suggesting-text)
 - [Accepting suggestion from a review](#accepting-suggestion-from-a-review)
 - [Code style guide and quality](#code-style-guide-and-quality)
   - [Matlab](#matlab)
@@ -77,47 +79,35 @@ along the way.
 
 ## Understanding issues
 
-Every project on GitHub uses
-[issues](https://github.com/cpp-lln-lab/CPP_BIDS/issues) slightly differently.
-
-The following outlines how BIDS developers think about communicating through
-issues.
+Every project on GitHub uses issues slightly differently.
 
 **Issues** are individual pieces of work that need to be completed or decisions
-that need to be made to move the project forwards. A general guideline: if you
-find yourself tempted to write a great big issue that is difficult to describe
-as one unit of work, please consider splitting it into two or more issues.
+that need to be made to move the project forwards.
 
-Issues are assigned [labels](#issue-labels) which explain how they relate to the
-overall project's goals and immediate next steps.
+A general guideline: if you find yourself tempted to write a great big issue
+that is difficult to describe as one unit of work, please consider splitting it
+into two or more issues.
 
-    - [ Issue labels
+Issues are assigned labels which explain how they relate to the overall
+project's goals and immediate next steps.
 
-The current list of labels are
-[here](https://github.com/cpp-lln-lab/CPP_BIDS/labels) and include:
+### Issue labels
 
-- [![Opinions wanted](https://img.shields.io/badge/-opinions%20wanted-84b6eb.svg)](https://github.com/bids-standard/cpp-lln-lab/CPP_BIDS/opinions%20wanted)
-  _These issues hold discussions where we're especially eager for feedback._
+The current list of labels are at this generic URL:
 
-  Ongoing discussions benefit from broad feedback. This label is used to
-  highlight issues where decisions are being considered, so please join the
-  conversation!
+https://github.com/cpp-lln-lab/repo_name/labels
 
-<!-- TODO:
-- add more issue labels description -->
+You can browse issues and pull requests by sorting them by labels.
 
 ## Making a change with a pull request
 
-We appreciate all contributions to the BIDS Specification. **THANK YOU** for
-helping us build this useful resource.
-
-     - [ 1. Comment on an existing issue or open a new issue referencing your addition
+### Comment on an existing issue or open a new issue referencing your addition
 
 This allows other members of the team to confirm that you aren't overlapping
 with work that's currently underway and that everyone is on the same page with
 the goal of the work you're going to carry out.
 
-#### 2. [Fork](https://help.github.com/articles/fork-a-repo/) [this repository](https://github.comcpp-lln-lab/CPP_BIDS) to your profile
+### Fork this repository to your profile
 
 This is now your own unique copy of the repository. Changes here won't affect
 anyone else's work, so it's a safe space to explore edits to the code!
@@ -127,17 +117,15 @@ Make sure to
 with the master repository, otherwise you can end up with lots of dreaded
 [merge conflicts](https://help.github.com/articles/about-merge-conflicts/).
 
-#### 3. Make the changes you've discussed
+### Make the changes you've discussed
 
 Try to keep the changes focused. If you submit a large amount of work in all in
 one go it will be much more work for whomever is reviewing your pull request.
 Please detail the changes you are attempting to make.
 
-#### 4. Submit a [pull request](https://help.github.com/articles/about-pull-requests/)
+### Submit a pull request
 
 Please keep the title of your pull request short but informative.
-
-<!-- It will appear in the [changelog](src/CHANGES.md). -->
 
 Use one of the following prefixes in the title of your pull request:
 
@@ -186,13 +174,6 @@ the repository.
 
 ![BIDS-mainpage](commenting_images/BIDS_GitHub_mainpage.png "BIDS_GitHub_mainpage")
 
-<!-- ### Selecting an open pull request
-
-In this example we will be navigating to our
-[??? pull request](https://github.com/cpp-lln-lab/CPP_BIDS/pull/???).
-
-![BIDS-pr-list](commenting_images/BIDS_pr_list.png "BIDS_pr_list") -->
-
 ### Pull request description
 
 Upon opening the pull request we see a detailed description of what this pull
@@ -219,7 +200,7 @@ selected by clicking and dragging the plus sign.
 
 ![BIDS-specific-comment](commenting_images/BIDS_file_comment.png "BIDS-specific-comment")
 
-#### Suggesting text
+### Suggesting text
 
 Comments on lines can contain "suggestions", which allow you to propose specific
 wording for consideration. To make a suggestion, click the plus/minus (±) icon
@@ -452,11 +433,11 @@ your test suite.
 
 ```matlab
 success = moxunit_runtests(pwd, ... % the path where the tests are
-    '-verbose', ...
-    '-with_coverage', ...
-    '-cover', fullfile(pwd, '..'), ... % the path of the code whose coverage we want to estimate
-    '-cover_xml_file','coverage.xml', ...
-    '-cover_html_dir','coverage_html');
+                          '-verbose', ...
+                          '-with_coverage', ...
+                          '-cover', fullfile(pwd, '..'), ... % the path of the code whose coverage we want to estimate
+                          '-cover_xml_file','coverage.xml', ...
+                          '-cover_html_dir','coverage_html');
 ```
 
 This will return a clear underestimation of the code coverage as the the code in
@@ -469,13 +450,12 @@ I have not been able to find a way to exclude certain files without breaking
 some tests.
 
 ```matlab
-coverage = mocov( ...
-    '-expression', 'moxunit_runtests()', ...
-    '-verbose', ...
-    '-cover', fullfile(pwd, '..'), ...
-    '-cover_exclude', '*jsonread.m', ...
-    '-cover_xml_file','coverage.xml', ...
-    '-cover_html_dir','coverage_html')
+coverage = mocov('-expression', 'moxunit_runtests()', ...
+                  '-verbose', ...
+                  '-cover', fullfile(pwd, '..'), ...
+                  '-cover_exclude', '*jsonread.m', ...
+                  '-cover_xml_file','coverage.xml', ...
+                  '-cover_html_dir','coverage_html')
 ```
 
 ### Adding more tests
@@ -607,7 +587,6 @@ reStructured text mark up primers:
 For most repos there are templates to use for `.m` files in the `src/templates`
 folder that show how to format your help sections.
 
-
 ```matlab
 function y = my_function(arg1, arg2)
     %
@@ -696,8 +675,7 @@ Some are listed
 
 #### Read the docs
 
--   [qMRLab](https://github.com/qMRLab/qMRLab/wiki/Guideline:-Generating-Documentation)
-
+- [qMRLab](https://github.com/qMRLab/qMRLab/wiki/Guideline:-Generating-Documentation)
 
 ## Recognizing contributions
 
