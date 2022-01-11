@@ -578,6 +578,11 @@ reStructured text mark up primers:
 - more
   [python oriented](https://pythonhosted.org/an_example_pypi_project/sphinx.html)
 
+- other sources for using Sphinx and Read the docs:
+
+  - https://sublime-and-sphinx-guide.readthedocs.io/en/latest/index.html
+  - https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html
+
 - typical doc strings templates
   - [google way](https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html)
   - [numpy](https://www.sphinx-doc.org/en/master/usage/extensions/example_numpy.html#example-numpy)
@@ -641,7 +646,7 @@ find folder_path -maxdepth 1 -type f -name "*.m" \
 From the `docs` directory:
 
 ```bash
-sphinx-build -b html source build
+make html
 ```
 
 This will build an html version of the doc in the `build` folder.
