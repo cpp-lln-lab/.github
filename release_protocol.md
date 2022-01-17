@@ -10,13 +10,13 @@
 
 **Where relevant**
 
-- [ ] documentation related 
+- [ ] documentation related
   - [ ] ensure the documation is up to date
   - [ ] make sure the doc builds correctly and fix any error
 - [ ] update jupyter books
 - [ ] update binder
 - [ ] update docker recipes
-- [ ] update changelog 
+- [ ] update changelog
 
 ---
 
