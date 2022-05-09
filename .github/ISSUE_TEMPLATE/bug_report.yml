@@ -61,6 +61,16 @@ body:
 
   - type: textarea
     attributes:
+      label: Branch
+      description: |
+        Which version or which branch did you encounter this bug on?
+      render: markdown
+      value: |
+        - branch:
+        - version:
+
+  - type: textarea
+    attributes:
       label: Anything else?
       description: |
         Links? References? Anything that will give us more context about the issue you are encountering!
