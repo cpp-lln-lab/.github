@@ -5,12 +5,10 @@ on:
     branches: ['*']
     paths:
       - 'CITATION.cff'
-      - '.github/workflows/validate_cff.yml'
   pull_request:
     branches: ['*']
     paths:
       - 'CITATION.cff'
-      - '.github/workflows/validate_cff.yml'
 
 jobs:
 
